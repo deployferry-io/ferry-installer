@@ -2,7 +2,7 @@ import sys
 import requests
 import json
 
-API_URL = "https://dev-api.deployferry.io"
+API_URL = "https://api.deployferry.io"
 
 
 def get_bearer_token(key: str):
