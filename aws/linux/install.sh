@@ -8,7 +8,7 @@ echo $KEY
 
 ## update and install packages
 apt-get update
-apt-get install python3 python3-pip unzip
+apt-get install -y python3 python3-pip unzip
 apt install default-jdk
 java -version
 useradd --system --create-home ggc_user

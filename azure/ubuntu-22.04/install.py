@@ -4,7 +4,6 @@ import json
 
 API_URL = "https://api.deployferry.io"
 
-
 def get_bearer_token(key: str):
     response = requests.post(API_URL + "/auth/login_node",
                  headers={
