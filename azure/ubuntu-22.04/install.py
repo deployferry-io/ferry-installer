@@ -1,8 +1,8 @@
 import sys
 import requests
 import json
-
-API_URL = "https://api.deployferry.io"
+import os
+API_URL = os.environ.get("FERRY_API_URL", "https://api.deployferry.io")
 
 def get_bearer_token(key: str):
     response = requests.post(API_URL + "/auth/login_node",
