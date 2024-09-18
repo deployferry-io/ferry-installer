@@ -1,0 +1,6 @@
+wget https://github.com/deployferry-io/ferry-installer/archive/refs/tags/1.0.2.tar.gz
+tar -xf 1.0.2.tar.gz
+cd ferry-installer-1.0.2/azure/ubuntu-22.04/
+export FERRY_API_URL="https://api.dev.deployferry.io"
+chmod +x install.sh
+./install.sh
