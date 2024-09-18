@@ -56,17 +56,17 @@ source = "dps"
 global_endpoint = "https://{provisioning_host}"
 id_scope = "{id_scope}"
 
- payload = {{ uri = "file:///var/secrets/aziot/identityd/dps-additional-data.json" }}
+ payload = {{ uri = "file:///etc/aziot/secrets/identityd/dps-additional-data.json" }}
 
 [provisioning.attestation]
 method = "x509"
 registration_id = "{registration_id}"
 
 # Identity certificate private key
-identity_pk = "file:///var/aziot/secrets/{registration_id}.key.pem"
+identity_pk = "file:///etc/aziot/secrets/{registration_id}.key.pem"
 
 # Identity certificate
-identity_cert = "file:///var/aziot/secrets/{registration_id}.pem" """.format(
+identity_cert = "file:///etc/aziot/secrets/{registration_id}.pem" """.format(
     provisioning_host=provisioning_host,
     id_scope=id_scope,
     registration_id=registration_id)
