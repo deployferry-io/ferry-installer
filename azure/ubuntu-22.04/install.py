@@ -56,7 +56,7 @@ source = "dps"
 global_endpoint = "https://{provisioning_host}"
 id_scope = "{id_scope}"
 
- payload = {{ uri = "file:///var/secrets/aziot/identityd/dps-additional-data.json" }}
+payload = {{ uri = "file:///var/secrets/aziot/identityd/dps-additional-data.json" }}
 
 [provisioning.attestation]
 method = "x509"
